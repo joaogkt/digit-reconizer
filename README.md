@@ -4,7 +4,7 @@ Codigo python de rede neural convolucional, com o objetivo de descobrir o digito
 Pré requisitos:
 
 Instalar arquivos csv no site https://www.kaggle.com/c/digit-recognizer/data <br>
-Instalar bibliotecas -
+Instalar bibliotecas:
 ```
  pip install -r requirements.txt
 ```
