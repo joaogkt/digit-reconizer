@@ -35,7 +35,7 @@ for i in range(0, 6):
 plt.subplots_adjust(top=1.4)
 plt.savefig('digitos.png')
 plt.show()
-#Primeira parte
+
 
 x_train = x_train / 255
 x_test = x_test / 255
@@ -89,8 +89,6 @@ plt.ylabel('Acurácia')
 plt.legend(loc="lower right")
 plt.savefig('cnn.png')
 plt.show()
-#Segunda parte
-
 
 
 predictions_proba = model.predict(x_test)
@@ -108,4 +106,3 @@ plt.savefig('final.png')
 
 submission = pd.DataFrame({'ImageID' : pd.Series(range(1,28001)), 'Label' : predictions})
 submission.to_csv("submission.csv",index=False)
-#Terceira parte
